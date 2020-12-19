@@ -1,12 +1,14 @@
 //+------------------------------------------------------------------+
-//|                                           01_GetHistoryOrder.mqh |
-//|                                 Copyright 2018, Vladimir Zhbanko |
+//|                                           01_HistoryFunction.mqh |
+//|                                 Copyright 2016, Vladimir Zhbanko |
+//|                                       vladimir.zhbanko@gmail.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2018, Vladimir Zhbanko"
-#property link      "https://vladdsm.github.io/myblog_attempt/"
+#property copyright "Copyright 2016, Vladimir Zhbanko"
+#property link      "vladimir.zhbanko@gmail.com"
 #property strict
 // function to handle history in EA's
-// source: https://www.mql5.com/en/forum/138127
+// version 01
+// date 31.07.2016
 
 //+---------------------------------------------------+//
 //Function returning n of orders in history            //
@@ -21,8 +23,6 @@ User guide:
 4. Add function call inside start function to EA: e.g.: OrderProfitToCSV(TradeTermNumber);
 5. Add include call to this file  to EAe.g.:            #include <01_HistoryFunction.mqh>
 6. Add include call to this file  to EAe.g.:            #include <02_OrderProfitToCSV.mqh>
-
-
 */
 int GetHistoryOrderByCloseTime(int& tickets[], int Magic, int dsc=1){  #define ASCENDING -1
     /* https://forum.mql4.com/46182 zzuegg says history ordering "is not reliable
@@ -54,4 +54,3 @@ int GetHistoryOrderByCloseTime(int& tickets[], int Magic, int dsc=1){  #define A
        }            
     return(nOrders); 
 }
-

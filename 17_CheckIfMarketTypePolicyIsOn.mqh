@@ -17,7 +17,6 @@ User guide:
 2. Use this code to get the function result isMarketTypePolicyON = CheckIfMarketTypePolicyIsOn(MagicNumber, MyMarketType);
    only apply this code in case TerminalType is 0 meaning this working under supervision of Reinforcement learning policy
 3. Add variable isMarketTypePolicyON as a condition to open orders into EA
-
 */
 bool CheckIfMarketTypePolicyIsOn(int Magic, int MT)
 {

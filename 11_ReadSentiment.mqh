@@ -19,7 +19,6 @@ Function Functional Description:
 Function is returning -1 if no trades needs to be done or in case of errors
 Function will return 0 in case BUY trade is suggested
 Function will return 1 in case SELL trade is suggested
-
 User guide:
 1. #include this file to the folder Include #include <11_ReadSentiment.mqh>
 2. Define int variable Direction
@@ -34,10 +33,8 @@ User guide:
 /* 
 return TRUE if new bar is opened first time
 return FALSE in case intrabar
-
 Inputs: Trading Pair = "GBPUSD";
         DefaultDirection = -1;
-
 */
 
 //+------------------------------------------------------------------+

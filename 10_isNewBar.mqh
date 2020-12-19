@@ -51,3 +51,14 @@ bool isNewBar()
 //+------------------------------------------------------------------+
 // End of FUNCTION is New Bar
 //+------------------------------------------------------------------+
+
+
+bool IsNewCandle()
+{
+   static datetime saved_candle_time;
+   if(Time[0] == saved_candle_time)
+   return false;
+   else
+   saved_candle_time = Time[0];
+   return true;
+}
